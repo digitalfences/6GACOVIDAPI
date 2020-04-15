@@ -1,0 +1,24 @@
+{
+  "name": "covid-api-galen",
+  "version": "1.0.0",
+  "description": "An API for exploring a database of covid cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalfences/6GACOVIDAPI.git"
+  },
+  "author": "Galen Emanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digitalfences/6GACOVIDAPI/issues"
+  },
+  "homepage": "https://github.com/digitalfences/6GACOVIDAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  }
+}
