@@ -7,7 +7,7 @@ This is my attempt at a RESTful API that does just that with full CRUD functiona
 
 ## Getting Started
 
-The API is hosted at Heroku here:
+The API is hosted at Heroku here: https://pure-citadel-56709.herokuapp.com/
 Repo Github: https://github.com/digitalfences/6GACOVIDAPI
 
 ### Prerequisites
@@ -34,7 +34,51 @@ Through github repository:
 
 ## Running the tests
 
-Testing is easy with Postman. Simply run each route with request body set appropriately
+Documentation in doc folder
+
+### Read
+
+Index of all observations (may cause lagging)
+
+```
+/ or /index 
+```
+
+Find observations where deaths, confirmed cases, or recovered are equal to or above a certain number
+
+```
+/cases/deaths/:number
+/cases/confirmed/:number
+/cases/recovered/:number
+```
+
+Find cases by Serial Number, Date or Country
+```
+/SNo/:number
+/date/:date (format XX/XX/XXXX)
+/country/:country
+```
+
+### Create, Update and Delete
+
+Create: 
+
+```
+/ with the observation data you'd like to add in the body
+```
+
+Update:
+
+```
+/:Serial_Number with the observation data you'd like to change in the body
+```
+
+Delete:
+
+```
+/:Serial_Number of the observation you'd like to delete
+```
+
 
 ## Deployment
 
